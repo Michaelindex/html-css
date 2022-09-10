@@ -1,0 +1,23 @@
+@charset "UTF-8";
+body{
+    background: url(WALPAPER.jpg);
+    background-size: 1500px 750px;
+}
+p{
+    color: white;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+}
+main#imagem{
+    text-align: center;
+    border-style: groove;
+    border-color: white;
+    width: 190px;
+    text-indent: 1px;
+    background-color: #6441a5;
+    border-radius: 25px 10px;
+    margin: auto;
+
+}
