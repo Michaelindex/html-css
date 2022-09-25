@@ -1,11 +1,21 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Noto Sans Mono', monospace;
+    --fonte3: 'Sriracha', cursive;
+}
+
 *{
     margin: 0px;
     padding: 0px;
 }
 
 html, body{
+    font-family: var(--fonte1);
     min-width: 100vh;
     background-color: darkgray;
 }
@@ -17,8 +27,10 @@ header{
 }
 
 header > h1{
+    font-family: var(--fonte2);
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 10vw;
 
 }
 
@@ -37,10 +49,12 @@ header a:hover, footer a:hover{
 }
 
 section {
+    font-family: var(--fonte3);
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
-    padding-left: 23px;
+    padding-left: 33px;
+    font-size: 2em;
 }
 
 
@@ -65,5 +79,5 @@ footer{
     background-color: black;
     text-align: center;
     color: white;
-    padding: 5px 0;
+    padding: 5px 0px;
 }
