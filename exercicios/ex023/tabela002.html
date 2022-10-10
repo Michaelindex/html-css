@@ -15,6 +15,15 @@
             border-collapse: collapse;
         }
 
+        caption{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            font-size: 1.5em;
+            padding: 10px;
+            box-shadow:1px 1px 15px black;
+            border-radius: 5px 5px 0px 0px;
+        }
+
         td, th{
             border: 1px solid black;
             padding: 10px;
@@ -24,6 +33,11 @@
             background-color: gray;
             color: white;
         }
+
+        tbody > tr:nth-child(2n){ /* *** 2n-1 par ***    *** 2n impar ****/
+            background-color: lightgray;
+        }
+
         td.num{
             text-align: right;
         }
@@ -44,6 +58,9 @@
     -->
 
     <table>
+        <caption>
+            Estados e populacao do <strong>Brasil</strong>
+        </caption>
         <thead>
             <tr>
                 <th>Estado</th>
