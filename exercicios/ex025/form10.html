@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>exemp</h1>
+    <form action="cadastro.phgp">
+
+        <p>
+            <label for="iano">em que ano que voce nasceu</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2020" oninput="calcIdade()">
+        </p>
+
+        <p>
+            <label for="iidade">sua idade</label>
+            <output id="iidade">0</output>
+        </p>
+    </form>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>
