@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+*{
+    margin: 15px;
+    padding: 15px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+article::after{
+    content: 'Esse artigo foi impresso através do site Michael.index/seloco';
+}
