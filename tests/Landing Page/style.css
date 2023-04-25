@@ -1,0 +1,132 @@
+@charset "UTF-8";
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    background-color: #54007a;
+}
+
+.logo{
+    margin: 15px;
+    display: flex;
+    position: absolute;
+}
+
+header{
+    margin-top: 0px;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    padding: 19px;
+    align-items: center;
+    justify-content: end;
+}
+
+nav ul{
+    text-align: center;
+    width: 70px;
+    list-style: none;
+    padding: 5px;
+    margin-left: 35px;
+}
+.animacao{
+    width: 73px;
+    height: 92px;
+    animation-name: subir-descer;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes subir-descer {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+
+.padrao{
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 1.1em;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.padrao:hover{
+    transition: 0.5s;
+    color: #681bce;
+}
+
+.contactButton {
+    margin-left: 35px;
+    background: #681bce;
+    color: white;
+    font-family: inherit;
+    padding: 0.45em;
+    padding-left: 1.0em;
+    font-size: 17px;
+    font-weight: bolder;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.5em;
+    padding-right: 3em;
+}
+  
+.iconButton {
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7a8cf3;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+  
+.contactButton:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em 1.6em -0.6em #5566c2;
+}
+  
+.contactButton:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em #5566c2;
+}
+
+.inicio{
+    margin: 30px 50px 0px 250px;
+    padding: 45px;
+    height: 70vh;
+    background-color: #ffffff;
+    line-height: 45px;
+    border-radius: 30px;
+}
+
+
+
