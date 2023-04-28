@@ -13,10 +13,10 @@ body{
 
 section{
     position: absolute;
-    top: 50%;
+    top: 42%;
     left: 55%;
     transform: translate(-50%,-50%);
-    height: 80vh;
+    height: 65vh;
     width: 55vw;
     background-color: #100724;
     border-radius: 30px;
@@ -25,7 +25,7 @@ section{
 
 header{
     padding: 20px;
-    margin-right: 65px;
+    margin-right: 90px;
     color: white;
 }
 
@@ -89,7 +89,7 @@ main img{
 }
 
 .icons{
-    margin-top: 150px;
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -181,7 +181,7 @@ button:active {
     top: 0;
     right: 89px;
     width: 60vw;
-    height: 100vh;
+    height: 140vh;
     background-color: #071133;
     border-radius: 30px 30px 0px 0px;
     z-index: 0;
@@ -196,5 +196,34 @@ button:active {
     opacity: 0.5;
     filter: drop-shadow(1px 1px 50px white);
     z-index: -1;
+}
+.sobre{
+    position: absolute;
+    top: 57%;
+    text-align: center  ;
+}
+
+.sobre h2{
+    display: inline-block;
+    left: 55%;
+    margin-bottom: 35px;
+}
+
+.rocket{
+    display: none;
+    position: absolute;
+    top: -20%;
+    left: 80%;
+    filter: drop-shadow(0px 0px 20px rgba(128, 0, 128, 0.562));
+    animation: go-back 2s infinite alternate;
+}
+
+@keyframes go-back {
+    from {
+      transform: translateY(50px);
+    }
+    to {
+      transform: translateY(0);
+    }
 }
 
