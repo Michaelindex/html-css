@@ -22,14 +22,18 @@ span.carregando{
     border: 12px solid crimson;
     border-top: 12px solid transparent;
     border-radius: 50%;
-    animation: loading 1s linear infinite   ;
+    animation: loading 1s ease-in-out infinite;
 }
 
 @keyframes loading{
     0%{
         transform: rotate(0deg);
+        border: 12px solid blue;
+        border-top: 12px solid transparent;
     }
     100%{
         transform: rotate(360deg);
+        border: 12px solid crimson;
+        border-top: 12px solid transparent;
     }
 }
