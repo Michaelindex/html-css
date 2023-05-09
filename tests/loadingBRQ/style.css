@@ -1,0 +1,29 @@
+body{
+    background-color: black;
+}
+
+.carregando{
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-image: url(gotas.png);
+    background-size: cover;
+    animation: loading 1s linear infinite;
+    text-align: center;
+}
+
+@keyframes loading {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.font{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
