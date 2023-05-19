@@ -8,7 +8,7 @@
 }
 
 #background{
-    position: absolute;
+    position: fixed;
     background-image: url(../background.png);
     background-size: cover;
     background-attachment: fixed;
@@ -33,7 +33,7 @@
     text-decoration: none;
     color: #042940;
     font-weight: bolder;
-    font-size: 1.2em;
+    font-size: 1.3em;
     padding: 4px 7px;
 }
 
@@ -87,4 +87,3 @@ hr{
     border-radius: 30px;
     margin: auto;
 }
-
