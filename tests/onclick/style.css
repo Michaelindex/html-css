@@ -4,5 +4,38 @@
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: ;
+}
+
+body{
+    background-image: url(../landscape.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.clickme{
+    padding-top: 30px;
+    max-width: 220px;
+    text-align: center;
+    margin: auto;
+}
+
+.sobre{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    border: 1px solid white;
+    padding: 15px;
+    background-color: #213a03be;
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+}
+
+.sobre h3{
+    color: white;
+    font-weight: bolder;
+    font-size: 1.3em;
 }
