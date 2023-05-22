@@ -8,10 +8,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="clickme">Click-me Para expandir</h1>
+    <br><br><br><br>
+    <button class="clickme" onclick="oscilarClasse()">
+        <h1>Click-me</h1>
+    </button>
     <div class="sobre">
         <h3>Sobre</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat voluptas earum omnis veniam magnam ut inventore cumque dolorem. Mollitia illum accusamus deleniti beatae ratione facilis sunt asperiores labore sequi!</p>
     </div>
+
+    <script>
+        function oscilarClasse() {
+            var elemento = document.querySelector('.sobre');
+
+            if (elemento.style.display== 'none'){
+                elemento.style.display = 'block'
+            } else{
+                elemento.style.display ='none'
+            }
+        }
+    </script>
 </body>
 </html>
