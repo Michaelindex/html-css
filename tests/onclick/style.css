@@ -31,6 +31,7 @@ body{
 }
 
 .sobre{
+    margin-top: 50px;
     display: none;
     color: white;
     position: absolute;
