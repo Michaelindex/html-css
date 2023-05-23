@@ -11,9 +11,20 @@
     <img src="../landscapeFantasy.jpg" alt="jpg">
     <hr>
     <br><br>
-    <button class="button">
+    <button class="button" onclick="clickme">
         Click-me
     </button>
+    <script>
+    function clickme() {
+    var elemento = document.querySelector('.column');
+
+    if (elemento.style.display== 'none'){
+        elemento.style.display = 'block'
+    } else{
+        elemento.style.display ='none'
+    }
+    }
+    </script>
     <br><br>
     <div class="row">
         <div class="column">

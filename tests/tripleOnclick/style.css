@@ -33,6 +33,7 @@ img{
 }
 
 .column{
+    display: none;
     background-color: transparent;
     float: left;
     width: 33.33%;
