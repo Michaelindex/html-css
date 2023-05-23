@@ -22,6 +22,7 @@ img{
     width: 100px;
     height: 30px;
     border: 2px solid gray;
+    border-radius: 10px;
     font-weight: bolder;
     transition-duration: 0.4s;
 }
