@@ -6,14 +6,34 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+img{
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+
 .button{
+    background-color: transparent;
     display: flex;
+    align-items: center;
     justify-content: center;
     margin: auto;
+    width: 100px;
+    height: 30px;
+    border: 2px solid gray;
+    font-weight: bolder;
+    transition-duration: 0.4s;
+}
+
+.button:hover{
+    background-color: grey;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .column{
-    background-color: gray;
+    background-color: transparent;
     float: left;
     width: 33.33%;
     height: 50vh;
