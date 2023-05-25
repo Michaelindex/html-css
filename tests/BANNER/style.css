@@ -43,11 +43,11 @@ body{
 .banner-nav .apex{
     display: inline-block;
     position: absolute;
-    top: -6px;
-    left: 50%;
+    top: -10px;
+    left: 49.6%;
     transform: translate(-50%, -50%);
     width: 100px;
-    height: 126px;
+    height: 120px;
 }
   
 .banner-nav ul {
@@ -63,19 +63,20 @@ body{
 }
 
 .banner-nav button{
+    color: white;
     height: 40px;
     width: 90px;
     border: none;
     background-color: transparent;
+    border-radius: 10px;
+    font-size: 15px;
 }
 
 .banner-nav button:hover{
+    transition: ease-in-out 0.3s;
     background-color: white;
     cursor: pointer;
+    color: #740FFF;
 }
-  
-.banner-nav a {
-    color: #000000;
-    text-decoration: none;
-    font-weight: bolder;
-}
+
+
