@@ -28,26 +28,26 @@ body{
     bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #271F42;
+    background-color: #690a93;
     height: 50px;
-    width: 600px;
+    width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-top: 1px solid white;
     border-right: 1px solid white;
     border-left: 1px solid white;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .banner-nav .apex{
     display: inline-block;
     position: absolute;
-    top: -50%;
+    top: -6px;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 95px;
-    height: 150px;
-    background-color: rgba(255, 255, 255, 0.404);
+    width: 100px;
+    height: 126px;
 }
   
 .banner-nav ul {
