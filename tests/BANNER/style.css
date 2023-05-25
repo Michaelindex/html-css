@@ -28,7 +28,7 @@ body{
     bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #690a93;
+    background-color: #f0f0f0;
     height: 50px;
     width: 500px;
     display: flex;
@@ -40,16 +40,6 @@ body{
     border-radius: 10px 10px 0px 0px;
 }
 
-.banner-nav .apex{
-    display: inline-block;
-    position: absolute;
-    top: -10px;
-    left: 49.6%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: 120px;
-}
-  
 .banner-nav ul {
     list-style: none;
     padding: 0;
@@ -63,7 +53,7 @@ body{
 }
 
 .banner-nav button{
-    color: white;
+    color: #740FFF;
     height: 40px;
     width: 90px;
     border: none;
@@ -74,9 +64,9 @@ body{
 
 .banner-nav button:hover{
     transition: ease-in-out 0.3s;
-    background-color: white;
+    background-color: #740FFF;
     cursor: pointer;
-    color: #740FFF;
+    color: white;
 }
 
 
