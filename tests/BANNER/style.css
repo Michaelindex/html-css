@@ -5,6 +5,10 @@
     margin: 0px;
 }
 
+body{
+    background-color: gray;
+}
+
 .banner-video {
     position: relative;
     width: 100%;
@@ -26,13 +30,24 @@
     transform: translateX(-50%);
     background-color: #271F42;
     height: 50px;
-    width: 400px;
+    width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-top: 1px solid white;
     border-right: 1px solid white;
     border-left: 1px solid white;
+}
+
+.banner-nav .apex{
+    display: inline-block;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.404);
 }
   
 .banner-nav ul {
@@ -45,6 +60,18 @@
 .banner-nav li {
     display: inline-block;
     margin: 0 20px;
+}
+
+.banner-nav button{
+    height: 40px;
+    width: 90px;
+    border: none;
+    background-color: transparent;
+}
+
+.banner-nav button:hover{
+    background-color: white;
+    cursor: pointer;
 }
   
 .banner-nav a {
