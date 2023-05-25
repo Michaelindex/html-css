@@ -21,9 +21,18 @@
   
 .banner-nav {
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
+    background-color: #271F42;
+    height: 50px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
 }
   
 .banner-nav ul {
@@ -35,15 +44,11 @@
   
 .banner-nav li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 20px;
 }
   
 .banner-nav a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
+    font-weight: bolder;
 }
-  
-.banner-nav a:hover {
-    text-decoration: underline;
-}
-  
