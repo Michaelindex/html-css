@@ -3,24 +3,54 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 body{
-    background-color: gray;
+    background-color: transparent;
 }
 
 .banner-video {
-    position: relative;
     width: 100%;
     height: 100VH;
     overflow: hidden;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.div1 { 
+    grid-area: 1 / 1 / 2 / 2;
+    width: 500px; 
+    height: 400px; 
+    background-color: gray; 
+}
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+    width: 800px;
+    height: 400px;
+    background-color: rgb(158, 158, 158);
+}
+
+.nomeelogo{
+    width: 1300px;
+    height: 400px;
+    margin-top: 50vh;
+    transform: translate(0% , -50%);
+    display: grid;
+    justify-content: start;
+    align-items: center;
 }
   
 #banner-video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: blur(5px);
 }
   
 .banner-nav {
