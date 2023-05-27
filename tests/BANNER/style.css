@@ -7,15 +7,18 @@
 }
 
 body{
-    background-image: url(../background\ with\ braves.jpg);
-    background-size: cover;
-
+    background-color:# ;
 }
 
 .banner-video {
-    width: 100%;
-    height: 100VH;
+    background-image: url(../background\ with\ braves.jpg);
+    background-size: cover;
+    width: 95%;
+    height: 95vh;
     overflow: hidden;
+    margin: auto;
+    border: 3px double black;
+    border-radius: 0px 0px 30px 30px;
 }
 
 .parent {
@@ -60,10 +63,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid white;
-    border-right: 1px solid white;
-    border-left: 1px solid white;
-    border-radius: 10px 10px 0px 0px;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .banner-nav ul {
@@ -96,4 +97,56 @@ body{
     color: white;
 }
 
+.parent-inicio {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 90%;
+    height: 800px;
+    overflow: hidden;
+    margin: auto;
+}
 
+.div1-inicio {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    grid-area: 1 / 1 / 2 / 2;
+}
+.div2-inicio { 
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.logo{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Ubuntu:wght@700&display=swap');
+
+.nome{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em;
+}
+
+.logo-apex{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.div3-inicio {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    grid-area: 1 / 3 / 2 / 4;
+}
