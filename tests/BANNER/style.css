@@ -17,7 +17,6 @@ body{
     height: 95vh;
     overflow: hidden;
     margin: auto;
-    border: 3px double black;
     border-radius: 0px 0px 30px 30px;
 }
 
@@ -108,14 +107,86 @@ body{
     height: 800px;
     overflow: hidden;
     margin: auto;
+    background-image: url(../vectorbackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .div1-inicio {
-    width: 100%;
+    padding: 50px 50px;
+    width: 60%;
     height: 90%;
     overflow: hidden;
     grid-area: 1 / 1 / 2 / 2;
+    background-color: rgb(197, 197, 197);
+    margin: auto;
+    float: left;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    text-align: center;
+    font-weight: 900;
 }
+
+.div1-inicio:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+}
+
+.div1-inicio:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+}
+
+.div1-inicio:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.div1-inicio:hover:before {
+    border-color: #262626;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+}
+
+.div1-inicio:hover:after {
+    border-color: #262626;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+}
+
+.div1-inicio ul{
+    text-align: center;
+}
+
+.div1-inicio ul li{
+    list-style-type: none;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.div1-inicio h1{
+    text-align: center;
+    font-size: 2.5em;
+}
+
 .div2-inicio { 
     width: 100%;
     height: 90%;
@@ -138,15 +209,30 @@ body{
     font-size: 1.2em;
 }
 
-.logo-apex{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
 .div3-inicio {
-    width: 100%;
+    padding: 50px 50px;
+    width: 60%;
     height: 90%;
     overflow: hidden;
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: rgb(197, 197, 197);
+    border-radius: 30px;
+    border: 3px solid #66287c;
     grid-area: 1 / 3 / 2 / 4;
+    margin: auto;
+}
+
+.div3-inicio ul{
+    text-align: center;
+}
+
+.div3-inicio ul li{
+    list-style-type: none;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.div3-inicio h1{
+    text-align: center;
+    font-size: 2.5em;
 }
