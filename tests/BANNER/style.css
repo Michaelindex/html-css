@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color:# ;
-}
-
 .banner-video {
     background-image: url(../background\ with\ braves.jpg);
     background-size: cover;
@@ -103,7 +99,7 @@ body{
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    width: 90%;
+    width: 78%;
     height: 800px;
     overflow: hidden;
     margin: auto;
@@ -291,4 +287,44 @@ body{
 .div3-inicio h1{
     text-align: center;
     font-size: 2.5em;
+}
+
+hr{
+    max-width: 90%;
+    margin: auto;
+}
+
+.sobre{
+    max-width: 90%;
+    margin: auto;
+    height: 50vh;
+    background-image: url(../vectorbackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.insobre{
+    background-color: #5000c0d4;
+    padding: 15px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.sobre h1{
+    text-align: center;
+    margin: auto;
+    max-width: 800px;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    font-size: 2.5em;
+}
+
+.sobre p{
+    line-height: 35px;
+    text-align: center;
+    margin: auto;
+    max-width: 800px;
+    font-weight: bold;
+    font-size: 1.3em;
 }
