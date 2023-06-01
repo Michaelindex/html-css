@@ -377,33 +377,69 @@ hr{
 }
 .scrims-div1 { 
     grid-area: 1 / 1 / 2 / 2;
-    width: 100px;
-    height: 600px;
+    width: 510px;
+    height: 570px;
     text-align: center;
-    margin: auto;
- }
+    padding: 30px 0px;
+}
+
 .scrims-div2 { 
     grid-area: 1 / 2 / 2 / 3;
-    width: 100px;
-    height: 600px;
+    width: 510px;
+    height: 570px;
+    text-align: center;
+    padding: 30px 0px;
  }
 .scrims-div3 { 
     grid-area: 1 / 3 / 2 / 4;
-    width: 100px;
-    height: 600px;
+    width: 510px;
+    height: 570px;
+    text-align: center;
+    padding: 30px 0px;
  }
 .scrims-div4 { 
     grid-area: 2 / 1 / 3 / 2;
-    width: 100px;
-    height: 600px;
+    width: 510px;
+    height: 570px;
+    text-align: center;
+    padding: 30px 0px;
  }
 .scrims-div5 { 
     grid-area: 2 / 2 / 3 / 3;
-    width: 100px;
-    height: 600px;
+    width: 510px;
+    height: 570px;
+    text-align: center;
+    padding: 30px 0px;
  }
 .scrims-div6 { 
     grid-area: 2 / 3 / 3 / 4;
-    width: 100px;
-    height: 600px;
- }
+    width: 510px;
+    height: 570px;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.iframetwitch{
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+.buttontwitch{
+    border: none;
+}
+
+.buttontwitch a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    background-color: #5000c0d4;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px black;
+}
+
+.buttontwitch a:hover{
+    transition: ease-in-out 0.3s;
+    background-color: #2d006dd4;
+    box-shadow: 0px 0px 10px black;
+}
