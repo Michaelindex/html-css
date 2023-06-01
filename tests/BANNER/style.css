@@ -374,6 +374,12 @@ hr{
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    background-image: url(../vectorbackground2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.scrims-div1, .scrims-div2, .scrims-div3, .scrims-div4, .scrims-div5, .scrims-div6{
 }
 .scrims-div1 { 
     grid-area: 1 / 1 / 2 / 2;
