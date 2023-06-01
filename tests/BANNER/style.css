@@ -211,7 +211,7 @@
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.7em;
     color: #4d00b9;
-    text-shadow: 0px 0px 10px rgb(0 0 0);
+    text-shadow: 0px 0px 5px rgb(0 0 0);
 }
 
 .nome {}
@@ -379,8 +379,9 @@ hr{
     background-repeat: no-repeat;
 }
 
-.scrims-div1, .scrims-div2, .scrims-div3, .scrims-div4, .scrims-div5, .scrims-div6{
-}
+/* .scrims-div1, .scrims-div2, .scrims-div3, .scrims-div4, .scrims-div5, .scrims-div6{
+} */
+
 .scrims-div1 { 
     grid-area: 1 / 1 / 2 / 2;
     width: 510px;
