@@ -30,11 +30,12 @@ body{
     grid-row-gap: 0px;
 }
     
-.div1 { 
+.div1 {
     grid-area: 1 / 1 / 2 / 2;
-    width: 500px; 
-    height: 400px; 
+    width: 500px;
+    height: 400px;
     margin-left: 35px;
+    filter: drop-shadow(2px 2px 26px black);
 }
 
 .nomeelogo{
