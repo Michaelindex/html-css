@@ -368,7 +368,7 @@ hr{
     color: white;
 }
 
-.parent {
+.scrims-parent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -377,19 +377,31 @@ hr{
 }
 .scrims-div1 { 
     grid-area: 1 / 1 / 2 / 2;
+    width: 100px;
+    height: 200px;
  }
 .scrims-div2 { 
     grid-area: 1 / 2 / 2 / 3;
+    width: 100px;
+    height: 200px;
  }
 .scrims-div3 { 
     grid-area: 1 / 3 / 2 / 4;
+    width: 100px;
+    height: 200px;
  }
 .scrims-div4 { 
     grid-area: 2 / 1 / 3 / 2;
+    width: 100px;
+    height: 200px;
  }
 .scrims-div5 { 
     grid-area: 2 / 2 / 3 / 3;
+    width: 100px;
+    height: 200px;
  }
 .scrims-div6 { 
     grid-area: 2 / 3 / 3 / 4;
+    width: 100px;
+    height: 200px;
  }
