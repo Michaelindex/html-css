@@ -367,3 +367,29 @@ hr{
     font-size: 1.2em;
     color: white;
 }
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.scrims-div1 { 
+    grid-area: 1 / 1 / 2 / 2;
+ }
+.scrims-div2 { 
+    grid-area: 1 / 2 / 2 / 3;
+ }
+.scrims-div3 { 
+    grid-area: 1 / 3 / 2 / 4;
+ }
+.scrims-div4 { 
+    grid-area: 2 / 1 / 3 / 2;
+ }
+.scrims-div5 { 
+    grid-area: 2 / 2 / 3 / 3;
+ }
+.scrims-div6 { 
+    grid-area: 2 / 3 / 3 / 4;
+ }
