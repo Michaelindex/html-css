@@ -604,5 +604,10 @@ hr{
     align-items: center;
 }
 
+.best-div2 iframe{
+    border-radius: 30px;
+    margin-top: -60px;
+}
+
 
 
