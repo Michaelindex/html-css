@@ -461,11 +461,14 @@ hr{
 }
 
 .camps-parent {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-image: url(../vectorbackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .camp-button{
@@ -572,7 +575,7 @@ grid-row-gap: 0px;
 
 .best-parent .best-div1 h3{
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     color: white;
     font-size: 1.5em;
     font-weight: bolder;
