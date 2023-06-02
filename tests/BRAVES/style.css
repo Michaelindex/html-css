@@ -551,7 +551,23 @@ grid-row-gap: 0px;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    background-color: gray;
+    background-image: url(../background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 15px;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 0px 0px 15px black;
+}
+
+.best-parent .best-div1 h1{
+    position: absolute;
+    bottom: 85%;
+    color: white;
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px black;
 }
     
 .best-div1 {
