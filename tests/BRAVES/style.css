@@ -188,6 +188,7 @@ body{
     font-size: 1.7em;
     font-weight: bold;
     color: rgb(155, 155, 155);
+    text-shadow: 2px 2px 2px black;
 }
 
 .div1-inicio h1{
@@ -295,6 +296,8 @@ body{
     list-style-type: none;
     font-size: 1.7em;
     font-weight: bold;
+    color: rgb(155, 155, 155);
+    text-shadow: 2px 2px 2px black;
 }
 
 .div3-inicio h1{
