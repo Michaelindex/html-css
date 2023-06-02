@@ -545,3 +545,26 @@ grid-row-gap: 0px;
     box-shadow: 0 5px 35px rgb(0 0 0);
 }
 
+.best-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.best-div1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: black;
+    width: 450px;
+    height: 500px;
+}
+.best-div2 {
+    grid-area: 1 / 2 / 2 / 4;
+    background-color: gray;
+    width: 450px;
+    height: 500px;
+}
+
+
+
