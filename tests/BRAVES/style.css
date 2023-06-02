@@ -558,12 +558,22 @@ grid-row-gap: 0px;
     background-color: black;
     width: 100%;
     height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.best-div1 img{
+    border-radius: 30px;
 }
 .best-div2 {
     grid-area: 1 / 2 / 2 / 4;
     background-color: gray;
     width: 100%;
     height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
