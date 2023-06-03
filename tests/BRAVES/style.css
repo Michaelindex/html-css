@@ -616,6 +616,9 @@ hr{
 
 footer h1{
     text-align: center;
+    color: #5000c0d4;
+    font-size: 3.5em;
+    text-shadow: 2px 2px 5px black;
 }
 
 .footer-parent {
@@ -625,7 +628,7 @@ footer h1{
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     position: relative;
-    background-image: url(../vectorbackground2.png);
+    background-image: url(../vectorbackground.png);
     background-size: cover;
     background-position: center;
 }
