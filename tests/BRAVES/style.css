@@ -67,6 +67,9 @@ body{
     align-items: center;
     border: 1px solid black;
     border-radius: 10px;
+    position: fixed;
+    z-index: 999;
+    /*! top: 0; */
 }
 
 .banner-nav ul {
@@ -90,6 +93,7 @@ body{
     border-radius: 10px;
     font-size: 15px;
     margin: 0px 15px;
+    font-weight: bolder;
 }
 
 .banner-nav button:hover{
