@@ -628,9 +628,8 @@ footer h1{
 }
 
 .footer-img{
-    width: 250px;
-    height: 250px;
-    border: 1px solid black;
+    width: 150px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -672,6 +671,11 @@ footer h1{
     display: flex;
     justify-content: center;
     padding: 30px;
+}
+
+.footer-parent h2{
+    position: absolute;
+    top: 225px;
 }
 
 .footer-button{
