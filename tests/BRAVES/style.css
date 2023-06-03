@@ -624,6 +624,7 @@ footer h1{
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    position: relative;
 }
 
 .footer-img{
@@ -641,24 +642,60 @@ footer h1{
     height: 400px;
     background-color: gray;
     margin-right: auto;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
 }
 .footer-div2 {
     grid-area: 1 / 2 / 2 / 3; 
     width: 100%;
     height: 400px;
     background-color: gray;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
 }
 .footer-div3 {
     grid-area: 1 / 3 / 2 / 4; 
     width: 100%;
     height: 400px;
     background-color: gray;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
 }
 .footer-div4 {
     grid-area: 1 / 4 / 2 / 5; 
     width: 100%;
     height: 400px;
     background-color: gray;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.footer-button{
+    position: absolute;
+    top: 320px;
+    background-color: transparent;
+    border: none;
+}
+
+.footer-button a{
+    text-decoration: none;
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    background-color: #5000c0d4;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px black;
+}
+
+.footer-button a:hover{
+    transition: ease-in-out 0.3s;
+    background-color: #5000c0;
+    box-shadow: 0px 0px 35px rgb(255, 255, 255);
 }
 
 
