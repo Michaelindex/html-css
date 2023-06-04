@@ -727,7 +727,17 @@ footer h1{
     justify-content: end;
     align-items: center;
     padding: 20px;
+    position: relative;
 }
+
+.footer-locus p{
+    position: absolute;
+    bottom: 25px;
+    right: 34px;
+    color: #8a2be28c;
+}
+
+
 
 
 
