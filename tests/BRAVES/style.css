@@ -727,9 +727,8 @@ footer h1{
 .footer-locus{
     font-weight: bolder;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    text-align: center;
     padding: 20px;
 }
 
