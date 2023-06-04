@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="../LOGO.png" type="image/x-icon">
 </head>
 <body>
-    <div class="banner-video">
+    <div class="banner-video" id="Início">
         <div class="nomeelogo">
           <div class="parent">
             <div class="div1">
@@ -17,23 +17,55 @@
             </div>
           </div>
         </div>
-        <!--<img src="#" alt="jpg" id="banner-video"> -->
+
         <nav class="banner-nav">
           <ul>
             <button>
-                <a href="#"><strong>Início</strong></a>
+                <a href="#Início" onclick="smoothScroll('#Início', 2000)"><strong>Início</strong></a>
             </button>
             <button>
-                <a href="#"><strong>Sobre</strong></a>
+                <a href="#Sobre" onclick="smoothScroll('#Sobre', 2000)"><strong>Sobre</strong></a>
             </button>
             <button>
-                <a href="#"><strong>Scrims</strong></a>
+                <a href="#Scrims" onclick="smoothScroll('#Scrims', 2000)"><strong>Scrims</strong></a>
             </button>
             <button>
-                <a href="#"><strong>Contato</strong></a>
+                <a href="#Contato" onclick="smoothScroll('#Contato', 2000)"><strong>Contato</strong></a>
             </button>
           </ul>
         </nav>
+        <script>
+          function smoothScroll(target, duration) {
+          const element = document.querySelector(target);
+          const targetPosition = element.offsetTop;
+          const startPosition = window.pageYOffset;
+          const distance = targetPosition - startPosition;
+          let startTime = null;
+
+          function scrollAnimation(currentTime) {
+            if (startTime === null) {
+              startTime = currentTime;
+            }
+            const timeElapsed = currentTime - startTime;
+            const scrollY = ease(timeElapsed, startPosition, distance, duration);
+            window.scrollTo(0, scrollY);
+            if (timeElapsed < duration) {
+              requestAnimationFrame(scrollAnimation);
+            }
+          }
+
+          function ease(t, b, c, d) {
+            // Função de easing - pode ser ajustada para diferentes efeitos de transição
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t + b;
+            t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+          }
+
+          requestAnimationFrame(scrollAnimation);
+        }
+
+        </script>
     </div>
     <br><br>
     <section>
@@ -90,7 +122,7 @@
       <br>
       <hr>
       <br>
-      <div class="sobre">
+      <div id="Sobre">
         <div id="caixa-preta"></div>
         <div class="insobre">
           <h1 class="sobretitulo">SOBRE</h1>
@@ -105,9 +137,9 @@
       font-size: 3em;
       color: #4d00b9;
       text-shadow: 0px 0px 5px rgb(0 0 0);
-      ">SCRIMS</h1>
+      " id="Scrims">SCRIMS</h1>
 
-      <div class="scrims-parent">
+      <div class="scrims-parent" id="Scrims">
         <div class="scrims-div1"> 
           <h1>BRAVES X FURIA</h1>
           <br>      
@@ -213,7 +245,7 @@
         <br><hr><br>
         <h1>CONTATO</h1>
         <br><hr><br>
-        <div class="footer-parent">
+        <div class="footer-parent" id="Contato">
           <div class="footer-div1">
             <img src="../instagram.png" alt="png" class="footer-img">
             <h2>Instagram</h2>
