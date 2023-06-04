@@ -78,25 +78,25 @@ body{
     margin: 0;
     text-align: center;
 }
-  
-.banner-nav li {
-    display: inline-block;
-    margin: 0 20px;
-}
 
 .banner-nav button{
+    background-color: transparent;
+    border: none;
+}
+
+.banner-nav a{
     color: #740FFF;
-    height: 40px;
-    width: 90px;
+    padding: 10px 15px;
     border: none;
     background-color: transparent;
     border-radius: 10px;
     font-size: 15px;
     margin: 0px 15px;
     font-weight: bolder;
+    text-decoration: none;
 }
 
-.banner-nav button:hover{
+.banner-nav a:hover{
     transition: ease-in-out 0.3s;
     background-color: #740FFF;
     cursor: pointer;
@@ -189,7 +189,7 @@ body{
 
 .div1-inicio ul li{
     list-style-type: none;
-    font-size: 1.7em;
+    font-size: 1.5em;
     font-weight: bold;
     color: rgb(155, 155, 155);
     text-shadow: 2px 2px 2px black;
@@ -197,7 +197,7 @@ body{
 
 .div1-inicio h1{
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .div2-inicio { 
