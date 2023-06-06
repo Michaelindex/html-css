@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braves E-sports</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../LOGO.png" type="image/x-icon">
+</head>
+<body>
+    <div class="banner-video" id="Início">
+        <div class="nomeelogo">
+          <div class="parent">
+            <div class="div1">
+              <img src="../LOGO.png" alt="png" width="80%" height="100%">
+            </div>
+          </div>
+        </div>
+
+        <nav class="banner-nav">
+          <ul>
+            <button>
+                <a href="#Início" onclick="smoothScroll('#Início', 2000)"><strong>Início</strong></a>
+            </button>
+            <button>
+                <a href="#Sobre" onclick="smoothScroll('#Sobre', 2000)"><strong>Sobre</strong></a>
+            </button>
+            <button>
+                <a href="#Scrims" onclick="smoothScroll('#Scrims', 2000)"><strong>Scrims</strong></a>
+            </button>
+            <button>
+                <a href="#Contato" onclick="smoothScroll('#Contato', 2000)"><strong>Contato</strong></a>
+            </button>
+          </ul>
+        </nav>
+        <script>
+          function smoothScroll(target, duration) {
+          const element = document.querySelector(target);
+          const targetPosition = element.offsetTop;
+          const startPosition = window.pageYOffset;
+          const distance = targetPosition - startPosition;
+          let startTime = null;
+
+          function scrollAnimation(currentTime) {
+            if (startTime === null) {
+              startTime = currentTime;
+            }
+            const timeElapsed = currentTime - startTime;
+            const scrollY = ease(timeElapsed, startPosition, distance, duration);
+            window.scrollTo(0, scrollY);
+            if (timeElapsed < duration) {
+              requestAnimationFrame(scrollAnimation);
+            }
+          }
+
+          function ease(t, b, c, d) {
+            // Função de easing - pode ser ajustada para diferentes efeitos de transição
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t + b;
+            t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+          }
+
+          requestAnimationFrame(scrollAnimation);
+        }
+
+        </script>
+    </div>
+    <br><br>
+    <section>
+      <div class="parent-inicio">
+        <div class="div1-inicio">
+          <h1>Gerencia</h1>
+          <br><br>
+          <ul>
+            <li>Marafah</li>
+            <p>CEO</p>
+            <br>
+            <li>Negoh</li>
+            <p>CEO<p>
+            <br>
+            <li>Fatal</li>
+            <p>Marketing digital<p>
+            <br>
+            <li>Harper</li>
+            <p>Staff/Social Media<p>
+            <br>
+            <li>FishMooney</li>
+            <p>Org. Scrims<p>
+            <br>
+            <li>luanzinEOQ</li>
+            <p>Org. Scrims<p>
+          </ul>
+        </div>
+        <div class="div2-inicio">
+          <div class="logo">
+            <img src="../LOGO.png" alt="png" width="70%" height="45%">
+          </div>
+          <div class="nome">
+            <br>
+            <h1>B R A V E S</h1>
+          </div>
+        </div>
+        <div class="div3-inicio">
+          <h1>Jogadores</h1>
+          <br><br>
+          <ul>
+            <li>G0dzFPS</li>
+            <p>IGL<p>
+            <br>
+            <li>Cremanice</li>
+            <p>Fragger<p>
+            <br>
+            <li>ColleFPS</li>
+            <p>Suporte<p>
+              <br><br><br>
+            <img src="../apexlogo.png" alt="png" width="150px" height="150px" style="filter: drop-shadow(2px 4px 6px white);">
+          </ul>
+        </div>
+      </div>
+      <br>
+      <hr>
+      <br>
+      <div id="Sobre">
+        <div id="caixa-preta"></div>
+        <div class="insobre">
+          <h1 class="sobretitulo">SOBRE</h1>
+          <br>
+          <p>Bem-vindo à Braves E-Sports! <br> Nossa equipe está focada em crescer no campo competitivo. <br> Nosso objetivo é encontrar jogadores habilidosos para alcançar o sonho de se tornar um jogador profissional e participar de campeonatos mundiais no futuro.    Agradecemos a todos que querem ajudar a equipe a crescer. <br> Somos todos iniciantes no esporte eletrônico, alguns com experiência avançada. Buscamos jogadores comprometidos com o treinamento diário, melhoria de sua mira e acompanhamento de campeonatos. <br> Lembre-se, o sucesso depende de nós. Se você está se juntando à equipe, saiba que estamos todos aprendendo juntos.  Claro, nosso objetivo é ganhar prêmios e patrocínios no futuro.</p>
+        </div>
+      </div>
+      <br><hr><br>
+
+      <h1 style="
+      text-align: center;
+      font-size: 3em;
+      color: #4d00b9;
+      text-shadow: 0px 0px 5px rgb(0 0 0);
+      " id="Scrims">SCRIMS</h1>
+
+      <div class="scrims-parent" id="Scrims">
+        <div class="scrims-div1"> 
+          <h1>BRAVES X FURIA</h1>
+          <br>      
+          <iframe src="" frameborder="0" allowfullscreen="true" scrolling="no" height="278" width="410" class="iframetwitch"></iframe>
+          <br><br><br>
+          <button class="buttontwitch">
+            <a href="#">Veja na TWITCH</a>
+          </button>
+        </div>
+        <div class="scrims-div2"> 
+          <h1>BRAVES X FURIA</h1>
+          <br>      
+          <iframe src="" frameborder="0" allowfullscreen="true" scrolling="no" height="278" width="410" class="iframetwitch"></iframe>
+          <br><br><br>
+          <button class="buttontwitch">
+            <a href="#">Veja na TWITCH</a>
+          </button>
+        </div>
+        <div class="scrims-div3"> 
+          <h1>BRAVES X FURIA</h1>
+          <br>      
+          <iframe src="" frameborder="0" allowfullscreen="true" scrolling="no" height="278" width="410" class="iframetwitch"></iframe>
+          <br><br><br>
+          <button class="buttontwitch">
+            <a href="#">Veja na TWITCH</a>
+          </button>
+        </div>
+        <div class="scrims-div4"> 
+          <h1>BRAVES X FURIA</h1>
+          <br>      
+          <iframe src="" frameborder="0" allowfullscreen="true" scrolling="no" height="278" width="410" class="iframetwitch"></iframe>
+          <br><br><br>
+          <button class="buttontwitch">
+            <a href="#">Veja na TWITCH</a>
+          </button>
+        </div>
+        <div class="scrims-div5"> 
+          <h1>BRAVES X FURIA</h1>
+          <br>      
+          <iframe src="" frameborder="0" allowfullscreen="true" scrolling="no" height="278" width="410" class="iframetwitch"></iframe>
+          <br><br><br>
+          <button class="buttontwitch">
+            <a href="#">Veja na TWITCH</a>
+          </button>
+        </div>
+        <div class="scrims-div6"> 
+          <h1>BRAVES X FURIA</h1>
+          <br>      
+          <iframe src="" frameborder="0" allowfullscreen="true" scrolling="no" height="278" width="410" class="iframetwitch"></iframe>
+          <br><br><br>
+          <button class="buttontwitch">
+            <a href="#">Veja na TWITCH</a>
+          </button>
+        </div>
+        </div>
+        <br><br>
+        <h1 class="nome">CAMPEONATOS</h1>
+        <br><br>
+        <div class="camps-parent">
+          <div class="camps-div1">
+             <h1>Torneament</h1>
+             <h3><strong>Edição MKTS-KMT</strong></h3>
+             <iframe src="https://player.twitch.tv/?video=1810738036&parent=index.html" frameborder="0" allowfullscreen="true" scrolling="no" height="190" width="310" class="iframetwitch"></iframe>
+             <br>
+             <h2>Fase de entrada</h2>
+             <h3 style="color: white;">PASSAMOS</h3>
+             <br><br>
+             <button class="camp-button"><a href="#">VEJA O CAMP</a></button>
+          </div>
+          <div class="camps-div2">
+            <h1>Torneament</h1>
+            <h3><strong>Edição MKTS-KMT</strong></h3>
+             <iframe src="https://player.twitch.tv/?video=1831004299&parent=index.html" frameborder="0" allowfullscreen="true" scrolling="no" height="190" width="310" class="iframetwitch"></iframe>
+             <br>
+             <h2>Semi-Final</h2>
+             <h3 style="color: white;">PASSAMOS</h3>
+             <br><br>
+             <button class="camp-button"><a href="#">VEJA O CAMP</a></button>
+          </div>
+          <div class="camps-div3">
+            <h1>Torneament</h1>
+            <h3><strong>Edição MKTS-KMT</strong></h3>
+             <iframe src="https://player.twitch.tv/?video=1837730825&parent=index.html" frameborder="0" allowfullscreen="true" scrolling="no" height="190" width="310" class="iframetwitch"></iframe>
+             <br>
+             <h2>Final</h2>
+             <h3 style="color: white;">GANHAMOS</h3>
+             <br><br>
+             <button class="camp-button"><a href="#">VEJA O CAMP</a></button>
+          </div>
+          </div>
+          <br><br><br>
+          <div class="best-parent">
+            <div class="best-div1">
+              <img src="../EU.png" alt="png" width="350px" height="350px">
+              <h1>DESTAQUE DO MÊS</h1>
+              <h3>Michael 'Mclovin' Santos</h3>
+            </div>
+            <div class="best-div2">
+              <iframe src="https://clips.twitch.tv/embed?clip=SuperSplendidOrangePJSugar-_FooVIlEax_5BsBX&parent=index.html" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="710"></iframe>
+              <button class="camp-button"><a href="#">VEJA A JOGADA</a></button>
+            </div>
+          </div>
+    </section>
+    <div class="background-footer">
+      <footer>
+        <br><hr><br>
+        <h1>CONTATO</h1>
+        <br><hr><br>
+        <div class="footer-parent" id="Contato">
+          <div class="footer-div1">
+            <img src="../instagram.png" alt="png" class="footer-img">
+            <h2>Instagram</h2>
+            <button class="footer-button"><a href="https://www.instagram.com/bravesesportsteam/" target="_blank">- CESSAR  -</a></button>
+          </div>
+          <div class="footer-div2">
+            <img src="../twitter.png" alt="png" class="footer-img">
+            <h2>Twitter</h2>
+            <button class="footer-button"><a href="https://twitter.com/Braves_sports" target="_blank">- ACESSAR -</a></button>
+          </div>
+          <div class="footer-div3">
+            <img src="../discordia.png" alt="png" class="footer-img">
+            <h2>Discord</h2>
+            <button class="footer-button"><a href="https://discord.gg/HT3SrhXr5A" target="_blank">- ACESSAR -</a></button>
+          </div>
+          <div class="footer-div4">
+            <img src="../tik-tok.png" alt="png" class="footer-img" width="612px" height="612px">
+            <h2>Tik-Tok</h2>
+            <button class="footer-button"><a href="https://www.tiktok.com/@bravesesportsteam" target="_blank">- ACESSAR -</a></button>
+          </div>
+          <div class="footer-div5"> 
+            <img src="../twitch.png" alt="png" class="footer-img">
+            <h2>Twitch</h2>
+            <button class="footer-button"><a href="https://www.twitch.tv/braves_esports_team" target="_blank">- ACESSAR -</a></button>
+          </div> 
+        </div>
+      </footer>
+      <h3 class="footer-locus">Site Desenvolvido por <a href="https://youtube.com"><img src="../locus-png.png" alt="png" width="90px" height="90px"></a><p>Locus</p></h3>
+    </div>
+</body>
+</html>
