@@ -13,4 +13,73 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-image: linear-gradient(gray, white);
 }
+
+.inputCep h1{
+    color: white;
+    font-size: 65px;
+    margin: 15px 0px;
+}
+
+.inputall{
+    width: 250px;
+    height: 40px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.inputall input{
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.inputall input::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.inputall button{
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+
+.inputall button span{
+    color: black;
+}
+
+.inputall button:hover{
+    scale: 1.2;
+}
+
+.Infos-cep{
+    border-radius: 8px;
+    margin: 30px 0px;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Infos-cep h2{
+    margin: 5px;
+}
+
+
+
