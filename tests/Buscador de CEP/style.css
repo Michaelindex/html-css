@@ -6,3 +6,11 @@
     font-family: sans-serif;
 }
 
+.container{
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
