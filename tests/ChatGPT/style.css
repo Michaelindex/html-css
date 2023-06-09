@@ -4,7 +4,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #042940;
+  background-color: #8B5FBF;
 }
 
 .container {
@@ -12,6 +12,7 @@ body {
   margin: 0 auto;
   background-color: #fff;
   padding: 20px;
+  border-radius: 8px;
 }
 
 h1, h2, h3 {
@@ -21,11 +22,11 @@ h1, h2, h3 {
 
 nav {
   position: fixed;
-  top: 20px;
+  top: 40px;
   left: 50%;
   transform: translateX(-50%);
   max-width: 40vw;
-  background-color: #005C53;
+  background-color: #442C6F;
   border-radius: 8px;
 }
 
@@ -46,7 +47,7 @@ nav {
 }
 
 .nav-menu li a {
-  color: #9FC131;
+  color: #fff;
   text-decoration: none;
   padding: 8px 16px;
   border-radius: 8px;
@@ -54,10 +55,10 @@ nav {
 }
 
 .nav-menu li a:hover {
-  background-color: #DBF227;
+  background-color: #9E7BD1;
 }
 
-#about, #projects, #testimonials, #contact {
+#sobre {
   margin-bottom: 30px;
 }
 
@@ -72,13 +73,28 @@ nav {
   border-radius: 8px;
 }
 
+#projetos {
+  text-align: center;
+}
+
 .project {
+  display: inline-block;
   margin-bottom: 20px;
   text-align: center;
 }
 
+.project img {
+  width: 300px;
+  border-radius: 8px;
+}
+
+#depoimentos {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .testimonial {
-  background-color: #f5f5f5;
+  background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
@@ -89,34 +105,58 @@ nav {
   margin-bottom: 10px;
 }
 
-.testimonial .author {
+.author {
   font-weight: bold;
 }
 
-footer {
-  background-color: #f5f5f5;
+#contato {
   text-align: center;
-  padding: 20px;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #442C6F;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+  margin-top: 30px;
 }
 
 .social-media {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .social-link {
-  display: inline-block;
-  margin: 0 5px;
-  font-size: 20px;
-  color: #333;
+  color: #fff;
+  margin-right: 10px;
+  text-decoration: none;
 }
 
-/* Estilos responsivos */
-
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 90vw;
-  }
-  nav {
-    max-width: 90vw;
-  }
+.social-link:hover {
+  color: #9E7BD1;
 }
