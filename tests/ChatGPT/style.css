@@ -4,7 +4,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #c1e1ff;
+  background-color: #333; /* Background mais escuro */
 }
 
 .container {
@@ -12,15 +12,44 @@ body {
   margin: 0 auto;
   background-color: #fff;
   padding: 20px;
+  display: grid; /* Adiciona um grid ao container */
+  grid-gap: 20px; /* Espaçamento entre os elementos do grid */
+  grid-template-areas:
+    "header"
+    "about"
+    "projects"
+    "testimonials"
+    "contact"
+    "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+#about {
+  grid-area: about;
+}
+
+#projects {
+  grid-area: projects;
+}
+
+#testimonials {
+  grid-area: testimonials;
+}
+
+#contact {
+  grid-area: contact;
+}
+
+footer {
+  grid-area: footer;
 }
 
 h1, h2, h3 {
-  color: #333;
+  color: #fff; /* Texto branco */
   text-align: center;
-}
-
-#about, #projects, #testimonials, #contact {
-  margin-bottom: 30px;
 }
 
 .project {
@@ -33,6 +62,7 @@ h1, h2, h3 {
   border-radius: 8px;
   text-align: center;
   margin-bottom: 20px;
+  color: #333; /* Texto preto */
 }
 
 .testimonial p {
@@ -65,5 +95,12 @@ footer {
 @media screen and (max-width: 768px) {
   .container {
     max-width: 90vw;
+    grid-template-areas:
+      "header"
+      "about"
+      "projects"
+      "testimonials"
+      "contact"
+      "footer";
   }
 }
