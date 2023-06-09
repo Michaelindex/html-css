@@ -12,60 +12,72 @@
   <nav>
     <div class="nav-container">
       <ul class="nav-menu">
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#projects">Projetos</a></li>
-        <li><a href="#testimonials">Depoimentos</a></li>
-        <li><a href="#contact">Contato</a></li>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </div>
   </nav>
 
   <div class="container">
-    <header>
+    <header id="inicio">
       <h1>Meu Portfólio</h1>
     </header>
 
-    <section id="about">
+    <section id="sobre">
       <h2>Sobre Mim</h2>
       <div class="about-content">
-        <img src="../Pronto1.png" alt="Minha Foto" width="120px">
+        <img src="my-photo.jpg" alt="Minha Foto">
         <p>Olá, meu nome é [Seu Nome]. Sou um desenvolvedor web apaixonado por criar experiências digitais incríveis. Tenho habilidades em HTML, CSS, JavaScript e estou sempre buscando aprender mais. Estou comprometido em entregar projetos de alta qualidade e soluções eficientes.</p>
       </div>
     </section>
 
-    <section id="projects">
+    <section id="projetos">
       <h2>Projetos Recentes</h2>
       <div class="project">
-        <img src="../background.jpg" alt="Projeto 1" width="120px">
+        <img src="project1.jpg" alt="Projeto 1">
         <h3>Projeto 1</h3>
         <p>Descrição do projeto 1.</p>
       </div>
       <div class="project">
-        <img src="../background.jpg" alt="Projeto 2" width="120px">
+        <img src="project2.jpg" alt="Projeto 2">
         <h3>Projeto 2</h3>
         <p>Descrição do projeto 2.</p>
       </div>
       <!-- Adicione mais projetos conforme necessário -->
     </section>
 
-    <section id="testimonials">
+    <section id="depoimentos">
       <h2>Depoimentos</h2>
       <div class="testimonial">
-        <img src="../Pronto1.png" alt="Depoimento 1" width="120px">
+        <img src="person1.jpg" alt="Depoimento 1">
         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac odio ipsum. Praesent ut semper nulla."</p>
         <p class="author">- John Doe, CEO da Empresa X</p>
       </div>
       <div class="testimonial">
-        <img src="../Pronto1.png" alt="Depoimento 2" width="120px">
+        <img src="person2.jpg" alt="Depoimento 2">
         <p>"Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."</p>
         <p class="author">- Jane Smith, Gerente de Projetos</p>
       </div>
       <!-- Adicione mais depoimentos conforme necessário -->
     </section>
 
-    <section id="contact">
+    <section id="contato">
       <h2>Contato</h2>
-      <p>Se você deseja discutir um projeto ou colaborar, entre em contato comigo através do seguinte e-mail: contato@seuemail.com</p>
+      <form action="#" method="POST">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
     </section>
 
     <footer>
@@ -78,6 +90,8 @@
       </div>
     </footer>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </body>
 
 </html>
