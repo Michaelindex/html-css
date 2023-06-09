@@ -5,35 +5,36 @@ body {
   margin: 0;
   padding: 0;
   background-color: #042940;
-  color: #fff;
 }
 
 .container {
-  max-width: 90vw;
+  max-width: 65vw;
   margin: 0 auto;
   padding: 20px;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-areas:
-    "header"
-    "about"
-    "projects"
-    "testimonials"
-    "contact"
-    "footer";
+  background-color: #fff;
+  color: #333;
+  border-radius: 8px;
 }
 
-header {
-  grid-area: header;
+h1, h2, h3 {
+  color: #333;
   text-align: center;
 }
 
 nav {
+  background-color: #9FC131;
+  width: 65vw;
+  max-width: 100%;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #005C53;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
 }
 
 .nav-menu {
@@ -57,31 +58,50 @@ nav {
 }
 
 .nav-menu li a:hover {
-  background-color: #9FC131;
+  background-color: #DBF227;
 }
 
 #about {
-  grid-area: about;
+  display: flex;
+  align-items: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-content img {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 8px;
 }
 
 #projects {
-  grid-area: projects;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
-#testimonials {
-  grid-area: testimonials;
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-#contact {
-  grid-area: contact;
+.project img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
 }
 
 footer {
-  grid-area: footer;
+  background-color: #f5f5f5;
   text-align: center;
   padding: 20px;
-  background-color: #f5f5f5;
-  color: #333;
 }
 
 .social-media {
@@ -100,12 +120,20 @@ footer {
 @media screen and (max-width: 768px) {
   .container {
     max-width: 90vw;
-    grid-template-areas:
-      "header"
-      "about"
-      "projects"
-      "testimonials"
-      "contact"
-      "footer";
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #projects {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content {
+    align-items: flex-start;
+  }
+
+  .about-content img {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
