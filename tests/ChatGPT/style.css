@@ -4,27 +4,27 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #333; /* Background mais escuro */
+  background-color: #c1e1ff;
 }
 
 .container {
   max-width: 90vw;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #333; /* Background escuro */
   padding: 20px;
-  display: grid; /* Adiciona um grid ao container */
-  grid-gap: 20px; /* Espaçamento entre os elementos do grid */
+  display: grid;
+  grid-gap: 20px;
   grid-template-areas:
-    "header"
-    "about"
-    "projects"
-    "testimonials"
-    "contact"
-    "footer";
+    "header header"
+    "about projects"
+    "testimonials testimonials"
+    "contact contact"
+    "footer footer";
 }
 
 header {
   grid-area: header;
+  text-align: center;
 }
 
 #about {
@@ -45,10 +45,11 @@ header {
 
 footer {
   grid-area: footer;
+  text-align: center;
 }
 
 h1, h2, h3 {
-  color: #fff; /* Texto branco */
+  color: #fff;
   text-align: center;
 }
 
@@ -62,7 +63,7 @@ h1, h2, h3 {
   border-radius: 8px;
   text-align: center;
   margin-bottom: 20px;
-  color: #333; /* Texto preto */
+  color: #333;
 }
 
 .testimonial p {
