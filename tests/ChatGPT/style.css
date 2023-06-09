@@ -4,27 +4,60 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #c1e1ff;
+  background-color: #042940;
+  color: #fff;
 }
 
 .container {
   max-width: 90vw;
   margin: 0 auto;
-  background-color: #333; /* Background escuro */
   padding: 20px;
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
-    "header header"
-    "about projects"
-    "testimonials testimonials"
-    "contact contact"
-    "footer footer";
+    "header"
+    "about"
+    "projects"
+    "testimonials"
+    "contact"
+    "footer";
 }
 
 header {
   grid-area: header;
   text-align: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #005C53;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.nav-menu li {
+  margin: 0 10px;
+}
+
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  background-color: #9FC131;
 }
 
 #about {
@@ -46,38 +79,9 @@ header {
 footer {
   grid-area: footer;
   text-align: center;
-}
-
-h1, h2, h3 {
-  color: #fff;
-  text-align: center;
-}
-
-.project {
-  margin-bottom: 20px;
-}
-
-.testimonial {
-  background-color: #f5f5f5;
   padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-  margin-bottom: 20px;
+  background-color: #f5f5f5;
   color: #333;
-}
-
-.testimonial p {
-  margin-bottom: 10px;
-}
-
-.testimonial .author {
-  font-weight: bold;
-}
-
-footer {
-  background-color: #f5f5f5;
-  text-align: center;
-  padding: 20px;
 }
 
 .social-media {
