@@ -119,7 +119,7 @@ body{
 .div1-inicio {
     padding: 20px;
     width: 60%;
-    height: 90%;
+    height: 95%;
     overflow: hidden;
     grid-area: 1 / 1 / 2 / 2;
     background-color: #5000c0d4;
@@ -182,6 +182,7 @@ body{
 
 .div1-inicio ul{
     text-align: center;
+    padding: 0px;
 }
 
 .div1-inicio ul li{
@@ -226,7 +227,7 @@ body{
     /*IMAGENS AQUI*/
     padding: 20px;
     width: 60%;
-    height: 90%;
+    height: 95%;
     overflow: hidden;
     grid-area: 1 / 3 / 2 / 4;
     margin: auto;
@@ -240,11 +241,6 @@ body{
     box-shadow: 0px 0px 15px black;
 }
 
-.div3-inicio img{
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-}
 /*
 .div3-inicio:before {
     position: absolute;
