@@ -241,6 +241,12 @@ body{
     border-radius: 30px;
     box-shadow: 0px 0px 15px black;
 }
+
+.div3-inicio img{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
 /*
 .div3-inicio:before {
     position: absolute;
