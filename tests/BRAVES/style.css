@@ -223,8 +223,9 @@ body{
 }
 
 .div3-inicio{
-    
+    height: 90%;
 }
+
 /*
 .div3-inicio:before {
     position: absolute;
