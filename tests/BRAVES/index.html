@@ -38,9 +38,8 @@
         <script>
           function smoothScroll(target, duration) {
             const element = document.querySelector(target);
-            const targetPosition = element.offsetTop;
             const startPosition = window.pageYOffset;
-            const distance = targetPosition - startPosition
+            const startTime = null
         
             function scrollAnimation(currentTime) {
               if (startTime === null) {
@@ -52,12 +51,6 @@
               if (timeElapsed < duration) {
                 requestAnimationFrame(scrollAnimation);
               }
-            }
-        
-            function ease(t, b, c, d) {
-              // Função de easing - pode ser ajustada para diferentes efeitos de transição
-              t /= d;
-              return c * t + b;
             }
         
             requestAnimationFrame(scrollAnimation);
