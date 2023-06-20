@@ -732,8 +732,8 @@ footer h1{
 
 .footer-locus p {
     position: absolute;
-    bottom: 0;
-    /* right: 34px; */
+    bottom: 20px;
+    right: 34px;
     color: #38a5ac;
     transition: opacity 1s, 1s;
     opacity: 0;
