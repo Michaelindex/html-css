@@ -7,6 +7,7 @@
     <title>Braves E-sports</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="../LOGO.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="banner-video" id="Início">
@@ -19,20 +20,43 @@
         <nav class="banner-nav">
           <ul>
             <button>
-                <a href="#Início" onclick="smoothScroll('#Início', 2000)"><strong>Início</strong></a>
+                <a href="#Início"><strong>Início</strong></a>
             </button>
             <button>
-                <a href="#Sobre" onclick="smoothScroll('#Sobre', 2000)"><strong>Sobre</strong></a>
+                <a href="#Sobre"><strong>Sobre</strong></a>
             </button>
             <button>
-                <a href="#Camp" onclick="smoothScroll('#Camp', 2000)"><strong>Camp</strong></a>
+                <a href="#Camp"><strong>Camp</strong></a>
             </button>
             <button>
-                <a href="#Contato" onclick="smoothScroll('#Contato', 2000)"><strong>Contato</strong></a>
+                <a href="#Contato"><strong>Contato</strong></a>
             </button>
           </ul>
         </nav>
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+          $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+          
+              if (this.hash !== "") {
+                event.preventDefault();
+          
+                // Store hash
+                var hash = this.hash;
+          
+
+                $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+                }, 800, function(){
+             
+
+                  window.location.hash = hash;
+                });
+              } // End if
+            });
+          });
+          </script>
     </div>
     <br><br>
     <section>
