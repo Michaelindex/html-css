@@ -8,10 +8,33 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="../LOGO.png" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+      
+          if (this.hash !== "") {
+            event.preventDefault();
+      
+            // Store hash
+            var hash = this.hash;
+      
+
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+         
+
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+      </script>
 </head>
 <body>
     <div class="banner-video" id="Início">
-        <div class="nomeelogo">
+        <div class="nomeelogo" id="Início">
           <div class="parent">
             <div class="div1">
             </div>
@@ -33,30 +56,6 @@
             </button>
           </ul>
         </nav>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-          $(document).ready(function(){
-            // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
-          
-              if (this.hash !== "") {
-                event.preventDefault();
-          
-                // Store hash
-                var hash = this.hash;
-          
-
-                $('html, body').animate({
-                  scrollTop: $(hash).offset().top
-                }, 800, function(){
-             
-
-                  window.location.hash = hash;
-                });
-              } // End if
-            });
-          });
-          </script>
     </div>
     <br><br>
     <section>
