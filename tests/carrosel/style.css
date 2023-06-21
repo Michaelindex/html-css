@@ -30,6 +30,7 @@ body{
 .slide{
     width: 25%;
     position: relative;
+    transition: 1s;
 }
 
 .slide img{

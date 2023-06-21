@@ -32,33 +32,6 @@
             </button>
           </ul>
         </nav>
-        <script>
-          function smoothScroll(target, duration) {
-            const element = document.querySelector(target);
-            const startPosition = window.pageYOffset;
-            const distance = targetPosition - startPosition;
-            let startTime = null
-        
-            function scrollAnimation(currentTime) {
-              if (startTime === null) {
-                startTime = currentTime;
-              }
-              const timeElapsed = currentTime - startTime;
-              const scrollY = ease(timeElapsed, startPosition, distance, duration);
-              window.scrollTo(0, scrollY);
-              if (timeElapsed < duration) {
-                requestAnimationFrame(scrollAnimation);
-              }
-            }
-            function ease(t, b, c, d) {
-              // Função de easing - pode ser ajustada para diferentes efeitos de transição
-              t /= d;
-              return c * t + b;
-            }
-        
-            requestAnimationFrame(scrollAnimation);
-          }
-        </script>
         
     </div>
     <br><br>
