@@ -91,9 +91,11 @@ body{
 .navigation-auto{
     position: absolute;
     width: 230px;
-    margin-top: 360px;
+    height: 735px;
+    margin-top: -40px;
     display: flex;
     justify-content: center;
+    align-items: end;
 }
 
 .navigation-auto div:not(:last-child){
