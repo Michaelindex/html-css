@@ -17,13 +17,3 @@ header{
     background-repeat: repeat;
     background-size: contain;
 }
-
-.logo{
-    margin: auto;
-    width: 350px;
-    height: 150%;
-    background-image: url(../LOCUS\ PNG\ ESCRITA.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
