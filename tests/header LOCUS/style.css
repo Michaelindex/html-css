@@ -27,16 +27,3 @@ header{
     background-repeat: no-repeat;
     background-position: center;
 }
-
-.desalinhado{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20px;
-    line-height: 20px;
-    animation-name: descer;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 0.5s;
-    animation-fill-mode: forwards;
-}
