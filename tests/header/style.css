@@ -27,3 +27,12 @@ body{
 .sobre h3{
     font-size: 1.3em;
 }
+
+.tec{
+    margin: 0px 100px;
+    max-width: 500px;
+}
+
+.tec h3{
+    text-align: center;
+}
