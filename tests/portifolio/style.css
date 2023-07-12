@@ -4,19 +4,19 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
 body {
     background-color: #f5f5f5;
+    overflow: auto;
 }
 
 #background {
-    position: fixed;
+    position: absolute;
     background-image: url(../background.png);
     background-size: cover;
-    background-attachment: fixed;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -29,7 +29,7 @@ body {
     right: 0;
     transform: translateY(-50%);
     width: 55px;
-    height: 200px;
+    height: 250px;
     background-color: #0429407e;
     padding: 10px;
     display: flex;
@@ -56,7 +56,6 @@ body {
 
 .link ul {
     display: flex;
-    justify-content: flex-end;
     list-style-type: none;
     margin-right: 200px;
 }
@@ -85,7 +84,6 @@ body {
     font-size: 1.6em;
     top: 25%;
     left: 10%;
-    position: absolute;
     line-height: 40px;
     color: #042940;
 }
