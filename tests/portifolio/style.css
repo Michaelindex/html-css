@@ -82,12 +82,11 @@ body {
 }
 
 .banner {
-    position: absolute;
+    max-width: 500px;
     font-size: 1.6em;
-    top: 25%;
-    left: 10%;
     line-height: 40px;
     color: #042940;
+    margin: 90px 0px 0px 120px;
 }
 
 .banner h1 {
