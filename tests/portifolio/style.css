@@ -57,6 +57,7 @@ body {
 .link ul {
     display: flex;
     list-style-type: none;
+    justify-content: flex-end;
     margin-right: 200px;
 }
 
@@ -81,6 +82,7 @@ body {
 }
 
 .banner {
+    position: absolute;
     font-size: 1.6em;
     top: 25%;
     left: 10%;
