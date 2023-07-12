@@ -23,21 +23,25 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    width: 80px;
+    width: 55px;
     height: 300px;
-    background-color: #f1f1f1;
+    background-color: #0429407e;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 5px 0px 0px 5px;
 }
 
 /* Estilos para os links das imagens */
 .sidebar a {
     display: block;
-    margin-bottom: 10px;
     width: 50px;
+}
+
+.sidebar a:not(:last-child) {
+    margin-bottom: 20px;
 }
 
 /* Estilos para as imagens */
