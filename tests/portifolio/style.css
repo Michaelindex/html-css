@@ -17,8 +17,8 @@ body {
     position: absolute;
     background-image: url(../background.png);
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     z-index: -1;
 }
@@ -28,7 +28,7 @@ body {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    width: 55px;
+    width: 70px;
     height: 250px;
     background-color: #0429407e;
     padding: 10px;
@@ -83,6 +83,7 @@ body {
 
 .banner {
     max-width: 500px;
+    height: 100vh;
     font-size: 1.6em;
     line-height: 40px;
     color: #042940;
