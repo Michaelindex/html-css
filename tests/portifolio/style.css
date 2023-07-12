@@ -82,8 +82,8 @@ body {
 }
 
 .banner {
-    max-width: 500px;
-    height: 100vh;
+    width: 500px;
+    height: 80vh;
     font-size: 1.6em;
     line-height: 40px;
     color: #042940;
