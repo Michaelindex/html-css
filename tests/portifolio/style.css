@@ -44,6 +44,11 @@
     margin-bottom: 20px;
 }
 
+.sidebar a:hover{
+    transition: 0.2s ease-in-out;
+    filter: drop-shadow(0px 0px 15px white);
+}
+
 /* Estilos para as imagens */
 .sidebar img {
     display: block;
