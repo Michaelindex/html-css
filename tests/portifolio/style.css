@@ -164,11 +164,23 @@ body {
     width: 100px;
     height: 100px;
     margin: 30px;
-    display: none;
 }
 
+.img-1, .img-2, .img-3, .img-4{
+    opacity: 0;
+}
 
+.bloco-filho:hover .img-1{
+    display: block;
+}
 
 .img-1 img, .img-2 img, .img-3 img, .img-4 img{
     margin-top: 5px;
+}
+
+#div-1:hover ~ .bloco-nene .img-1,
+#div-2:hover ~ .bloco-nene .img-2,
+#div-3:hover ~ .bloco-nene .img-3,
+#div-4:hover ~ .bloco-nene .img-4{
+    opacity: 1;
 }
