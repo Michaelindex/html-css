@@ -149,3 +149,13 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.bloco-pai img{
+    position: absolute;
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
