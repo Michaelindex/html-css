@@ -150,3 +150,15 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+
+.bloco-nene{
+    position: absolute;
+}
+
+.img-1, .img-2, .img-3, .img-4{
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    background-color: black;
+}
