@@ -154,11 +154,21 @@ body {
 
 .bloco-nene{
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
 }
 
 .img-1, .img-2, .img-3, .img-4{
     width: 100px;
     height: 100px;
-    margin: 29px;
-    background-color: black;
+    margin: 30px;
+    display: none;
+}
+
+
+
+.img-1 img, .img-2 img, .img-3 img, .img-4 img{
+    margin-top: 5px;
 }
