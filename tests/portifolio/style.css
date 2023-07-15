@@ -175,6 +175,14 @@ body {
     opacity: 0;
 }
 
+#div-1:hover, #div-2:hover, #div-3:hover, #div-4:hover{
+    transition: ease-in-out 0.5s;
+    border-radius: 15px;
+    width: 130px;
+    height: 130px;
+}
+
+
 .bloco-filho:hover .img-1{
     display: block;
 }
@@ -187,8 +195,9 @@ body {
 #div-2:hover ~ .bloco-nene .img-2,
 #div-3:hover ~ .bloco-nene .img-3,
 #div-4:hover ~ .bloco-nene .img-4{
-    transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.5s;
     opacity: 1;
+    filter: drop-shadow(0px 0px 15px white);
 }
 .parent {
     display: grid;
