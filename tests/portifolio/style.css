@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: gray;
+    background-color: rgba(11, 80, 123, 0.813);
     overflow: auto;
 }
 
@@ -129,6 +129,11 @@ body {
     width: 100%;
     text-align: center;
     position: relative;
+}
+
+.bloco-vo h1{
+    text-shadow: 2px 2px #ffffff;
+    color: #042940;
 }
 
 .bloco-pai{
