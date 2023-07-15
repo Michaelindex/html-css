@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="bg-gray-200 py-4">
+    <nav class="flex justify-center">
+      <ul class="flex space-x-4">
+        <li class="rounded-lg bg-white py-2 px-4 hover:bg-gray-100 transition-colors">Inicio</li>
+        <li class="rounded-lg bg-white py-2 px-4 hover:bg-gray-100 transition-colors">Sobre</li>
+        <li class="rounded-lg bg-white py-2 px-4 hover:bg-gray-100 transition-colors">Projetos</li>
+        <li class="rounded-lg bg-white py-2 px-4 hover:bg-gray-100 transition-colors">Contato</li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="grid grid-cols-2 gap-4">
+    <div class="max-w-500px">
+      <h1 class="text-2xl font-bold">Michael Dos Santos Moreira</h1>
+      <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis justo vel eros vulputate, id pharetra magna mattis. Fusce dapibus venenatis mauris, et consequat sem feugiat vel. Phasellus et rhoncus arcu, quis bibendum ipsum.</p>
+    </div>
+    <div>
+      <button class="border rounded-lg px-4 py-2 m-4">PROJETO1</button>
+      <button class="border rounded-lg px-4 py-2 m-4">PROJETO2</button>
+      <button class="border rounded-lg px-4 py-2 m-4">PROJETO3</button>
+      <button class="border rounded-lg px-4 py-2 m-4">PROJETO4</button>
+      <button class="border rounded-lg px-4 py-2 m-4">PROJETO5</button>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-2 gap-4 mt-8">
+    <div id="content-1" class="hidden bg-gray-200 w-500px h-500px">
+      Conteúdo do Botão 1
+    </div>
+    <div id="content-2" class="hidden bg-gray-200 w-500px h-500px">
+      Conteúdo do Botão 2
+    </div>
+    <div id="content-3" class="hidden bg-gray-200 w-500px h-500px">
+      Conteúdo do Botão 3
+    </div>
+    <div id="content-4" class="hidden bg-gray-200 w-500px h-500px">
+      Conteúdo do Botão 4
+    </div>
+    <div id="content-5" class="hidden bg-gray-200 w-500px h-500px">
+      Conteúdo do Botão 5
+    </div>
+  </div>
+
+  <script>
+    // Adicionar os eventos de clique aos botões
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        // Esconder todos os conteúdos
+        const contents = document.querySelectorAll('[id^="content-"]');
+        contents.forEach(content => content.classList.add('hidden'));
+
+        // Mostrar o conteúdo correspondente ao botão clicado
+        const contentToShow = document.querySelector(`#content-${index + 1}`);
+        contentToShow.classList.remove('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
