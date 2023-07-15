@@ -182,6 +182,13 @@ body {
     height: 130px;
 }
 
+#div-1:hover, #div-2:hover, #div-3:hover, #div-4:hover{
+    transition: ease-in-out 0.5s;
+    border-radius: 15px;
+    width: 130px;
+    height: 130px;
+}
+
 
 .bloco-filho:hover .img-1{
     display: block;
