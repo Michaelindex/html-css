@@ -182,11 +182,8 @@ body {
     height: 130px;
 }
 
-#div-1:hover, #div-2:hover, #div-3:hover, #div-4:hover{
+#div-1, #div-2, #div-3, #div-4{
     transition: ease-in-out 0.5s;
-    border-radius: 15px;
-    width: 130px;
-    height: 130px;
 }
 
 
