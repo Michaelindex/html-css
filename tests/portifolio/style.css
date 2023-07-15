@@ -83,7 +83,7 @@ body {
 
 .banner {
     width: 500px;
-    height: 80vh;
+    height: calc(100vh - 52px);
     font-size: 1.6em;
     line-height: 40px;
     color: #042940;
