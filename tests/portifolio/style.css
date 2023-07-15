@@ -182,5 +182,6 @@ body {
 #div-2:hover ~ .bloco-nene .img-2,
 #div-3:hover ~ .bloco-nene .img-3,
 #div-4:hover ~ .bloco-nene .img-4{
+    transition: ease-in-out 0.2s;
     opacity: 1;
 }
