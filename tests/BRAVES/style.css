@@ -478,6 +478,34 @@ hr{
     color: white;
 }
 
+.subscrim-parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-bottom: 250px;
+    background-image: url(../vectorbackground.png);
+    background-size: cover;
+}
+    
+.subscrim-div1 {
+    grid-area: 1 / 1 / 2 / 2; 
+    width: 550px;
+    height: 550px;
+    text-align: center;
+    padding: 30px 0px;
+    margin: auto;
+}
+.subscrim-div2 {
+    grid-area: 1 / 2 / 2 / 3; 
+    width: 550px;
+    height: 550px;
+    text-align: center;
+    padding: 30px 0px;
+    margin: auto;
+}
+
 .scrims-parent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -487,6 +515,7 @@ hr{
     background-image: url(../vectorbackground2.png);
     background-size: cover;
     background-repeat: no-repeat;
+    display: none;
 }
 
  .scrims-div1, .scrims-div2, .scrims-div3, .scrims-div4, .scrims-div5, .scrims-div6{
@@ -507,7 +536,6 @@ hr{
     height: 570px;
     text-align: center;
     padding: 30px 0px;
-    margin-left: 60%;
  }
 .scrims-div3 {
     grid-area: 1 / 3 / 2 / 4;
@@ -545,6 +573,10 @@ hr{
 .iframetwitch{
     border-radius: 30px;
     border: 1px solid black;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .buttontwitch{
