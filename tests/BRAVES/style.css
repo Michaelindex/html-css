@@ -892,40 +892,30 @@ footer h1{
     width: 80%;
     height: 95%;
     margin: auto;
-    border: 1px solid black;
-    border-radius: 200px;
 }
 .parceiros-div2 {
     grid-area: 1 / 2 / 2 / 3; 
     width: 80%;
     height: 95%;
     margin: auto;
-    border: 1px solid black;
-    border-radius: 200px;
 }
 .parceiros-div3 {
     grid-area: 1 / 3 / 2 / 4; 
     width: 80%;
     height: 95%;
     margin: auto;
-    border: 1px solid black;
-    border-radius: 200px;
 }
 .parceiros-div4 {
     grid-area: 1 / 4 / 2 / 5; 
     width: 80%;
     height: 95%;
     margin: auto;
-    border: 1px solid black;
-    border-radius: 200px;
 }
 .parceiros-div5 {
     grid-area: 1 / 5 / 2 / 6; 
     width: 80%;
     height: 95%;
     margin: auto;
-    border: 1px solid black;
-    border-radius: 200px;
 }
 
 .h1par{
@@ -959,14 +949,25 @@ footer h1{
     opacity: 1;
 }
 
-.parceiros-filho{
+.parceiros-filho-1, .parceiros-filho-2, .parceiros-filho-3, .parceiros-filho-4, .parceiros-filho-5{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.parceiros-filho img{
+.parceiros-filho-1, .parceiros-filho-2, .parceiros-filho-3, .parceiros-filho-4, .parceiros-filho-5{
+    position: relative;
+}
+
+.h2filho{
+    position: absolute;
+    color: white;
+    bottom: 10px;
+}
+
+
+.parceiros-filho-1 img, .parceiros-filho-2 img, .parceiros-filho-3 img, .parceiros-filho-4 img, .parceiros-filho-5 img{
     width: 80%;
     height: 80%;
 }
