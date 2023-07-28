@@ -963,8 +963,9 @@ footer h1{
 .h2filho{
     position: absolute;
     color: black;
-    bottom: 10px;
+    bottom: 0px;
     text-shadow: 1px 1px 5px black;
+    text-align: center;
 }
 
 
