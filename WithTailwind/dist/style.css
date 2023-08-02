@@ -658,6 +658,26 @@ video {
   right: 2.75rem;
 }
 
+.right-14 {
+  right: 3.5rem;
+}
+
+.right-16 {
+  right: 4rem;
+}
+
+.top-16 {
+  top: 4rem;
+}
+
+.right-20 {
+  right: 5rem;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
 .mt-44 {
   margin-top: 11rem;
 }
