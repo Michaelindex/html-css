@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../../dist/style.css">
     <title>Tailwindcss basics</title>
 </head>
-<body class="font-sans">
+<body class="font-sans w-full h-full">
     <header class="w-1/2 fixed top-0 bg-gray-50 flex items-center justify-center">
         <nav class="flex items-center justify-start">
             <ul class="flex items-center justify-center bg-azul2 rounded-xl py-3 px-5 hover:shadow-2xl transition duration-500 border-azul3 hover:border-transparent">
@@ -16,8 +16,8 @@
             </ul>
         </nav>
     </header>
-    <div class="w-full flex">
-        <main class="mt-44 w-1/2">
+    <div class="w-full h-full flex">
+        <main class="mt-44 w-1/2 inline-block">
             <section>
                 <div class="w-full flex">
                     <div class="w-full bg-gray-50 text-center">
@@ -41,8 +41,8 @@
                 </div>
             </section>
         </main>
-        <div class="relative w-1/2">
-            <div class="w-20 h-20 border-2 border-black absolute top-0 right-0"></div>
+        <div class="relative w-1/2 inline-block">
+            <div class="w-full border-2 border-black absolute top-0 right-0" style="height: 150%;"></div>
         </div>
     </div>
 </body>
