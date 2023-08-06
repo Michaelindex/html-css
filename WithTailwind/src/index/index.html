@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../dist/style.css">
+    <link rel="stylesheet" href="../../dist/styleadd.css">
     <title>Tailwindcss basics</title>
 </head>
 <body class="font-sans w-full h-full" style="background-image: url(../assets/background-vetor.png); background-size: cover; background-repeat: no-repeat;">
@@ -22,8 +23,8 @@
                 <div class="w-full flex">
                     <div class="w-full text-center">
                         <h1 class="text-6xl text-black font-bold">Olá, sou <strong class="text-white italic" style="text-shadow: 0px 0px 3px black;">Michael</strong></h1>
-                        <h1>Sou web-design</h1>
-                        <h1 class="text-lg text-black">Trabalho e estudo com essas tecnologias</h1>
+                        <h1><span id="word" class="font-bold"></span></h1>
+                        <h1 class="text-lg text-black">Tecnologias usadas no trabalho e no estudo</h1>
                         <div class="flex items-center justify-center">
                             <div class="flex flex-col">
                                 <img id="tecs" src="../assets/html.png" alt="HTMLicon" width="85px" class="hover:scale-75 p-1 transition duration-150 hover:rounded-xl" >
@@ -50,5 +51,6 @@
             <div class="w-full absolute top-0 right-0" style="height: 150%;"></div>
         </div>
     </div>
+    <script src="../script.js"></script>
 </body>
 </html>
