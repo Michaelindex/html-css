@@ -9,3 +9,13 @@
     opacity: 0;
   }
 }
+
+#background{
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../src/assets/background-vetor.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
