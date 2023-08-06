@@ -1,3 +1,6 @@
+body{
+  background-color: #0fc2bf37;
+}
 /* Defina o estilo do cursor para parecer que está digitando */
 #word::after {
   content: "|";
@@ -18,4 +21,14 @@
   background-image: url(../src/assets/background-vetor.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.box-sobre{
+  transition: 0.5s;
+  box-shadow: 10px 10px 15px #008F8C;
+}
+
+.box-sobre:hover{
+  transition: 0.5s;
+  box-shadow: none;
 }
