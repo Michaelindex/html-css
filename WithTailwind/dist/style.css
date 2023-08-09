@@ -580,6 +580,26 @@ video {
   margin-top: 20rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-36 {
+  margin-top: 9rem;
+}
+
+.mt-56 {
+  margin-top: 14rem;
+}
+
 .flex {
   display: flex;
 }
@@ -610,6 +630,14 @@ video {
 
 .h-7 {
   height: 1.75rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-8 {
+  height: 2rem;
 }
 
 .w-1\/2 {
