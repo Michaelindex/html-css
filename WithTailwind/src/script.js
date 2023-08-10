@@ -29,3 +29,11 @@ if (index >= 0) {
 }
 
 typeWord(words[currentIndex], 0);
+
+document.addEventListener("DOMContentLoaded", function () {
+    window.addEventListener("scroll", function () {
+        if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
+            document.getElementById("contact-panel").style.display = "block";
+        }
+    });
+});
