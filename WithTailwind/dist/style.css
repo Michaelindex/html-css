@@ -680,6 +680,10 @@ video {
   flex-direction: column;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
 }
@@ -745,6 +749,11 @@ video {
 .bg-azul1 {
   --tw-bg-opacity: 1;
   background-color: rgb(15 194 192 / var(--tw-bg-opacity));
+}
+
+.bg-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-25 {
