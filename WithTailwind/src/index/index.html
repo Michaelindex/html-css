@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../dist/style.css">
+    <link rel="stylesheet" href="../../dist/styleadd.css">
+    <title>Tailwindcss basics</title>
+</head>
+<body class="font-sans w-full h-full">
+    <div id="background"></div>
+    <header class="w-1/2 fixed top-0 flex items-center justify-center z-50">
+        <nav class="flex items-center justify-start">
+            <ul class="flex items-center justify-center bg-azul2 rounded-xl py-3 px-5 hover:shadow-2xl transition duration-500 border-azul3" style="border-left: 5px solid black;border-right: 5px solid black;">
+                <li class="font-bold"><a href="#inicio" class="text-azul5 p-2 hover:text-azul1 transition duration-75 w-full hover:shadow-md rounded-md hover:bg-azul5 hover:bg-opacity-10">Início</a></li>
+                <li class="font-bold"><a href="#sobre" class="text-azul5 p-2 hover:text-azul1 transition duration-75 w-full hover:shadow-md rounded-md hover:bg-azul5 hover:bg-opacity-10">Sobre</a></li>
+                <li class="font-bold"><a href="#projetos" class="text-azul5 p-2 hover:text-azul1 transition duration-75 w-full hover:shadow-md rounded-md hover:bg-azul5 hover:bg-opacity-10">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="w-full h-full flex" id="inicio" style="position: relative; z-index: 40;">
+        <div class="mt-80 w-1/2 h-full">
+            <section>
+                <div class="w-full flex">
+                    <div class="w-full text-center">
+                        <h1 class="text-6xl text-black font-bold">Olá, sou <strong class="text-azul3 italic" style="text-shadow: 0px 0px 3px #008F8C;">Michael</strong></h1>
+                        <h1><span id="word" class="font-bold text-azul3"></span></h1>
+                        <h1 class="text-lg text-black">Tecnologias usadas no trabalho e nos estudos</h1>
+                        <div class="flex items-center justify-center z-10 relative">
+                            <div class="flex flex-col">
+                                <img id="tecs" src="../assets/html.png" alt="HTMLicon" width="85px" class="hover:scale-75 p-1 transition duration-150 hover:rounded-xl" >
+                                <img id="tecs" src="../assets/css.png" alt="CSSicon" width="85px" class="hover:scale-75 p-1 transition duration-150 hover:rounded-xl" >
+                            </div>
+                            <div class="flex flex-col">
+                                <img id="tecs" src="../assets/javascript.png" alt="JSicon" width="85px" class="hover:scale-75 p-1 transition duration-150 hover:rounded-xl" >
+                                <img id="tecs" src="../assets/python-file.png" alt="PYicon" width="85px" class="hover:scale-75 p-1 transition duration-150 hover:rounded-xl" >
+                            </div>
+                            <div class="flex flex-col">
+                                <img id="tecs" src="../assets/bootstrap.png" alt="BTicon" width="85px" class="hover:scale-75 p-1 transition duration-150 hover:rounded-xl" >
+                                <img id="tecs" src="../assets/tailwind.png" alt="TWicon" width="85px" class="hover:scale-75 p-1 transition duration-150">
+                            </div>
+                            <div class="flex flex-col">
+                                <img id="tecs" src="../assets/nodejs.png" alt="BTicon" width="85px" class="hover:scale-75 p-1 transition duration-150 hover:rounded-xl" >
+                                <img id="tecs" src="../assets/react.png" alt="TWicon" width="85px" class="hover:scale-75 p-1 transition duration-150">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br><br><br id="sobre"><br><br><br>
+            <div>
+                <h1 class="text-6xl font-bold text-center"><strong class="text-azul3 italic" style="text-shadow: 0px 0px 3px #008F8C;">SOBRE</strong></h1>
+                <div>
+                    <h1 class="mt-3 text-3xl font-bold text-center" id="sobre"><strong class="text-azul4 italic" style="text-shadow: 0px 0px 3px #015958;">Áreas de conhecimento</strong></h1>
+                    <div class="mt-3 flex justify-between">
+                        <div class="w-1/3 bg-azul2 border border-azul5 p-4 box-sobre">
+                          <h1 class="text-xl font-bold mb-2 text-center">HARDWARE</h1>
+                          <hr class="my-2">
+                          <p class="text-base text-center">Ja atuei como técnico de bancada, possuo habilidades especializadas em solucionar problemas técnicos em equipamentos de TI, como computadores, servidores, impressoras, etc...</p>
+                        </div>
+                    
+                        <div class="w-1/3 bg-azul2 border border-azul5 p-4 mx-4 box-sobre">
+                          <h1 class="text-xl font-bold mb-2 text-center">REDES</h1>
+                          <hr class="my-2">
+                          <p class="text-base text-center">Como Analista de Infraestrutura Junior, possuo conhecimentos sólidos em projetar, configurar e manter infraestruturas de rede.</p>
+                        </div>
+                    
+                        <div class="w-1/3 bg-azul2 border border-azul5 p-4 box-sobre">
+                          <h1 class="text-xl font-bold mb-2 text-center">Web-Design</h1>
+                          <hr class="my-2">
+                          <p class="text-base text-center">Como desenvolvedor web, possuo proficiência em diversas técnologias de desenvolvimento, incluindo HTML, CSS, JavaScript, e domino frameworks populares.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident doloribus sunt, illo magnam architecto maxime, numquam ullam delectus corrupti, id soluta sint iusto officia deserunt! Cupiditate quis quisquam omnis consequatur.
+            Quo dolorum possimus quod perferendis nam ad consequatur deserunt sint corrupti? Itaque, pariatur, non ea voluptatibus impedit culpa sequi unde incidunt magni iure recusandae similique, excepturi veniam in esse possimus?
+            Delectus maiores, quia recusandae quibusdam doloremque adipisci. Repellendus tempora, recusandae aut necessitatibus, eveniet deleniti perspiciatis quo eaque numquam odit excepturi nemo molestias, fuga consequatur vitae optio voluptatum natus atque cupiditate.
+            Temporibus id eligendi cum blanditiis repellat eius porro. Accusantium impedit voluptatem id repellat laborum ipsam quasi officia quo, placeat culpa corporis commodi? Molestias molestiae, a iusto sint modi voluptas velit.</p>
+        </div>
+        <div class="w-1/2 h-full flex items-center justify-center" style="display: none;" id="contact-panel">
+            <div class="fixed flex z-10" style="background-color: #015958; opacity: 0.7; border-radius: 15px; width: 400px; height: 350px; margin-top: 15%; margin-left: 10%;">
+                <div class="relative w-full h-full">
+                    <div class="  absolute flex flex-col text-center justify-start z-20 w-full h-full">
+                        <br><h1 class="text-azul2 z-50 font-bold text-lg">Entrar em Contato</h1><br>
+                        <hr style="background-color: white;">
+                        <h2 class="text-azul1 font-bold text-md">Deixe-me saber como <br> posso atender às suas <br> necessidades e objetivos.</h2>
+                        <hr style="background-color: white;"> <br><br>
+                        <a href="https://github.com/MichaelIndex" class="hover:p-1.5 p-0.5 duration-150 mx-auto w-40 rounded-md border border-black bg-white text-black font-bold" target="_blank" style="background-color: #0CABA8;">Github</a>
+                        <a href="https://www.linkedin.com/in/michael-santos-moreira-1000a6249/" class="text-black font-bold hover:p-1.5 p-0.5 duration-150 mx-auto w-40 rounded-md border border-black bg-white" target="_blank" style="background-color: #0CABA8;">Linkedin</a>
+                        <a href="#" class="text-black font-bold hover:p-1.5 p-0.5 duration-150 mx-auto w-40 rounded-md border border-black bg-white" style="background-color: #0CABA8;">E-Mail</a>
+                        <a href="https://api.whatsapp.com/send?phone=5517992010557&text=Estou%20ansioso%20para%20conhecer%20mais%20sobre%20suas%20necessidades%20e%20objetivos.%20Enquanto%20aguardo%20sua%20mensagem,%20sinta-se%20%C3%A0%20vontade%20para%20explorar%20mais%20sobre%20meu%20trabalho%20e%20minha%20experi%C3%AAncia." class="text-black font-bold hover:p-1.5 p-0.5 duration-150 mx-auto w-40 rounded-md border border-black bg-white" target="_blank" style="background-color: #0CABA8;">Whatsapp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>
