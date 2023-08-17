@@ -1,6 +1,15 @@
 body{
   background-color: #0fc2bf37;
 }
+#vetor{
+  background-image: url(../../tests/vetor.jpg);
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 /* Defina o estilo do cursor para parecer que está digitando */
 #word::after {
   content: "|";
@@ -31,16 +40,4 @@ body{
 .box-sobre:hover{
   transition: 0.5s;
   box-shadow: none;
-}
-
-#pessoal{
-  width: 400px;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
-  transition: 0.3s;
-}
-
-#pessoal:hover{
-  transition: 0.3s;
-  border-radius: 0px 30px 30px 30px;
 }
