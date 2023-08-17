@@ -32,3 +32,15 @@ body{
   transition: 0.5s;
   box-shadow: none;
 }
+
+#pessoal{
+  width: 400px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transition: 0.3s;
+}
+
+#pessoal:hover{
+  transition: 0.3s;
+  border-radius: 0px 30px 30px 30px;
+}
