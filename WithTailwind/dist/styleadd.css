@@ -25,7 +25,7 @@ body{
 
 .box-sobre{
   transition: 0.5s;
-  box-shadow: 10px 10px 15px #008F8C;
+  box-shadow: 2px 2px 15px #008F8C;
 }
 
 .box-sobre:hover{
