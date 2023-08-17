@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.removeChild(dummyTextarea);
 
         // Alterar o texto para 'Copiado' temporariamente
-        emailButton.textContent = "Copiado";
+        emailButton.textContent = "Copiado...";
         setTimeout(function() {
             emailButton.textContent = originalText;
         }, 5000); // 5 segundos (5000 ms)
