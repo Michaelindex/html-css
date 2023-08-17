@@ -46,3 +46,8 @@ body{
   background-image: url(../src/assets/cluster.jpg);
   background-size: cover;
 }
+
+#bk2{
+  background-image: url(../src/assets/BANNERBRAVES.jpg);
+  background-size: cover;
+}
