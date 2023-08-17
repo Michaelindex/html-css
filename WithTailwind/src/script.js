@@ -37,3 +37,25 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const emailButton = document.getElementById("emailButton");
+    const originalText = emailButton.textContent;
+    const email = "mcialbr123@gmail.com";
+
+    emailButton.addEventListener("click", function() {
+        // Copiar para a área de transferência
+        const dummyTextarea = document.createElement("textarea");
+        dummyTextarea.value = email;
+        document.body.appendChild(dummyTextarea);
+        dummyTextarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(dummyTextarea);
+
+        // Alterar o texto para 'Copiado' temporariamente
+        emailButton.textContent = "Copiado";
+        setTimeout(function() {
+            emailButton.textContent = originalText;
+        }, 5000); // 5 segundos (5000 ms)
+    });
+});
