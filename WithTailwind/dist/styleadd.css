@@ -51,3 +51,8 @@ body{
   background-image: url(../src/assets/BANNERBRAVES.jpg);
   background-size: cover;
 }
+
+#bk3{
+  background-image: url(../src/assets/osticket.jpg);
+  background-size: cover;
+}
