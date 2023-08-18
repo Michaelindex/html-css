@@ -84,4 +84,17 @@ body{
   #submain-panel{
     display: none;
   }
+
+  #about-h1{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  #about-p{
+    font-weight: 600;
+  }
+
+  #about-header{
+    margin: 0px;
+  }
 }
