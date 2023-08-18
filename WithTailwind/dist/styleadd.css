@@ -98,7 +98,31 @@ body{
   text-align: center;
   color: white;
   font-weight: 600px;
-  width: 300px;
+  width: 400px;
+}
+
+#barra-esquerda{
+  position: absolute;
+  z-index: 1001;
+  width: 10px;
+  height: 60px;
+  top: 50%;
+  left: 0;
+  background-color: #008F8C;
+  border-radius: 0px 15px 15px 0px;
+  transform: translateY(-50%);
+}
+
+#barra-direita{
+  position: absolute;
+  z-index: 1001;
+  width: 10px;
+  height: 60px;
+  top: 50%;
+  right: 0;
+  background-color: #008F8C;
+  border-radius: 15px 0px 0px 15px;
+  transform: translateY(-50%);
 }
 
 @media (max-width: 768px) {
