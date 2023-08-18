@@ -71,3 +71,17 @@ body{
   background-image: url(../src/assets/automacoes.jpg);
   background-size: cover;
 }
+
+@media (max-width: 768px) {
+  #isp{
+    width: 100%;
+  }
+
+  #main-panel{
+    width: 100%;
+  }
+
+  #submain-panel{
+    display: none;
+  }
+}
