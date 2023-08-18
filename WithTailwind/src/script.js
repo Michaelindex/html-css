@@ -59,3 +59,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 5000); // 5 segundos (5000 ms)
     });
 });
+
+// Mostrar a mensagem por 3 segundos e depois esconder
+const mensagemDiv = document.getElementById('mensagem');
+const fundoDiv = document.getElementById('fundo');
+
+setTimeout(() => {
+    mensagemDiv.style.display = 'none';
+    fundoDiv.style.display = 'none';
+}, 3000); // 3000 milissegundos = 3 segundos
