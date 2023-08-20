@@ -160,8 +160,12 @@ body{
     height: 45%;
   }
 
-  #about-area{
-    
+  #about-area-pai{
+    flex-direction: column;
+  }
+
+  #about-area-filho{
+    width: 100%;
   }
 
 }
