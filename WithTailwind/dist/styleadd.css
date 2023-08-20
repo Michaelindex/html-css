@@ -149,8 +149,8 @@ body{
   }
 
   #about-header{
-    margin: 15px 0px;
-    width: 100%;
+    margin: 15px auto;
+    width: 80%;
   }
 
   .mensagem-mobile, .fundo-preto {
@@ -164,10 +164,6 @@ body{
 
   #about-area-pai{
     flex-direction: column;
-  }
-
-  #about-area-filho{
-    width: 100%;
   }
 
 }
