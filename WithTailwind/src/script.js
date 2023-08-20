@@ -67,4 +67,4 @@ const fundoDiv = document.getElementById('fundo');
 setTimeout(() => {
     mensagemDiv.style.display = 'none';
     fundoDiv.style.display = 'none';
-}, 3000); // 3000 milissegundos = 3 segundos
+}, 5000); // 3000 milissegundos = 3 segundos
