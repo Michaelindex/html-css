@@ -35,6 +35,7 @@ body{
 .box-sobre{
   transition: 0.5s;
   box-shadow: 2px 2px 15px #008F8C;
+  height: 150px;
 }
 
 .box-sobre:hover{
@@ -148,7 +149,8 @@ body{
   }
 
   #about-header{
-    margin: 0px;
+    margin: 15px 0px;
+    width: 100%;
   }
 
   .mensagem-mobile, .fundo-preto {
