@@ -35,7 +35,6 @@ body{
 .box-sobre{
   transition: 0.5s;
   box-shadow: 2px 2px 15px #008F8C;
-  height: 150px;
 }
 
 .box-sobre:hover{
@@ -166,4 +165,7 @@ body{
     flex-direction: column;
   }
 
+  .box-sobre{
+    width: 150px;
+  }
 }
